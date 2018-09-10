@@ -1,6 +1,7 @@
 {
   "name": "robo-searcher",
   "version": "0.1.0",
+  "homepage": "https://altRush.github.io/robo-searcher",
   "private": true,
   "dependencies": {
     "gh-pages": "^1.2.0",
@@ -16,6 +17,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "homepage": "https://altRush.github.io/robo-searcher"
+  }
 }
