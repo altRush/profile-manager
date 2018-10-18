@@ -5,55 +5,58 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import './App.css';
 
-import { setSearchField } from '../actions/actions'
-
-console.log(setSearchField);
+import { setSearchField } from '../actions/actions';
 
 const mapStateToProps = state => {
-  return {   
+  return {
     searchField: state.searchField
-  }
-}
+  };
+};
 
 //Action being dispatched
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
-    onSearchChange: (event) => dispatch(setSearchField(event.target.value))
-  }
-}
+    onSearchChange: event => dispatch(setSearchField(event.target.value))
+  };
+};
 
 class App extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      robots: []
-    }
+      staffs: []
+    };
   }
 
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => { return response.json(); })
-      .then(users => this.setState({ robots: users }))
+      .then(response => {
+        return response.json();
+      })
+      .then(users => this.setState({ staffs: users }));
   }
 
-  render() { 
-    const { robots } = this.state;
+  render() {
+    const { staffs } = this.state;
     const { searchField, onSearchChange } = this.props;
-    const filteredRobots = robots.filter(robot => {
-      return robot.name.toLowerCase().includes(searchField.toLowerCase());
-    })
-    return !robots.length ?
-    <h1 className='tc pt6 fs'>Loading</h1> :
-      (
-        <div className='tc'>
-          <h1 className='f1'>Robo Searcher</h1>
-          <SearchBox searchChange={onSearchChange} />
-          <Scroll>
-            <CardList robots={filteredRobots}/>
-          </Scroll>
-        </div>
-      )
-    }
+    const filteredStaffs = staffs.filter(staff => {
+      return staff.name.toLowerCase().includes(searchField.toLowerCase());
+    });
+    return !staffs.length ? (
+      <h1 className="tc pt6 fs">Loading</h1>
+    ) : (
+      <div className="tc vh-100 pt5">
+        <div className="f1 title">Profile Manager</div>
+        <SearchBox searchChange={onSearchChange} />
+        <Scroll>
+          <CardList staffs={filteredStaffs} />
+        </Scroll>
+      </div>
+    );
+  }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App); 
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
