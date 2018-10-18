@@ -1,6 +1,6 @@
 {
-  "name": "robo-searcher",
-  "version": "0.1.2",
+  "name": "profile-manager",
+  "version": "1.0",
   "homepage": "https://altRush.github.io/profile-manager",
   "private": true,
   "dependencies": {
