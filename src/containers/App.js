@@ -43,9 +43,9 @@ class App extends Component {
       return staff.name.toLowerCase().includes(searchField.toLowerCase());
     });
     return !staffs.length ? (
-      <h1 className="tc pt6 fs">Loading</h1>
+      <h1 className="tc vh-100 pt6 fs">Loading</h1>
     ) : (
-      <div className="tc vh-100 pt5">
+      <div className="tc vh-100 pt5-ns pt3">
         <div className="f1 title">Profile Manager</div>
         <SearchBox searchChange={onSearchChange} />
         <Scroll>
