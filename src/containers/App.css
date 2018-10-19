@@ -3,11 +3,16 @@
   font-weight: normal;
 }
 
+@media (min-width: 600px) {
+  .f1-ns {
+    font-size: 70px;
+    padding: 20px 0px;
+  }
+}
+
 .title {
   font-family: 'Quattrocento Sans', sans-serif;
   color: rgb(255, 239, 209);
-  font-size: 70px;
-  padding: 20px 0px;
 }
 
 .fs {

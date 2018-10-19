@@ -2,7 +2,7 @@ import React from 'react';
 
 const Scroll = props => {
   return (
-    <div className="br3 ba dark-gray b--black-10 mv4 mh4 shadow-5 overflow-y-scroll vh-50 pt3 pb3">
+    <div className="br3 ba dark-gray b--black-10 mv4-ns mv1 mh4 shadow-5 overflow-y-scroll vh-50-ns vh-75 pt3 pb3">
       {props.children}
     </div>
   );

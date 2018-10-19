@@ -45,8 +45,8 @@ class App extends Component {
     return !staffs.length ? (
       <h1 className="tc vh-100 pt6 fs">Loading</h1>
     ) : (
-      <div className="tc vh-100 pt5-ns pt3">
-        <div className="f1 title">Profile Manager</div>
+      <div className="tc vh-100 pt4-ns pt3">
+        <div className="f1-ns f1 title">Profile Manager</div>
         <SearchBox searchChange={onSearchChange} />
         <Scroll>
           <CardList staffs={filteredStaffs} />
