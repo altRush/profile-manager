@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.991dce8a.css",
-  "main.css.map": "static/css/main.991dce8a.css.map",
-  "main.js": "static/js/main.db1b3195.js",
-  "main.js.map": "static/js/main.db1b3195.js.map"
+  "main.css": "/profile-manager/static/css/main.79bb6643.chunk.css",
+  "main.js": "/profile-manager/static/js/main.1dda2af9.chunk.js",
+  "main.js.map": "/profile-manager/static/js/main.1dda2af9.chunk.js.map",
+  "static/css/1.2925258f.chunk.css": "/profile-manager/static/css/1.2925258f.chunk.css",
+  "static/js/1.6cd3b2aa.chunk.js": "/profile-manager/static/js/1.6cd3b2aa.chunk.js",
+  "static/js/1.6cd3b2aa.chunk.js.map": "/profile-manager/static/js/1.6cd3b2aa.chunk.js.map",
+  "runtime~main.js": "/profile-manager/static/js/runtime~main.8588e6cb.js",
+  "runtime~main.js.map": "/profile-manager/static/js/runtime~main.8588e6cb.js.map",
+  "static/css/1.2925258f.chunk.css.map": "/profile-manager/static/css/1.2925258f.chunk.css.map",
+  "static/css/main.79bb6643.chunk.css.map": "/profile-manager/static/css/main.79bb6643.chunk.css.map",
+  "index.html": "/profile-manager/index.html",
+  "precache-manifest.8f5d3153c1f52b724f833aabcf131f80.js": "/profile-manager/precache-manifest.8f5d3153c1f52b724f833aabcf131f80.js",
+  "service-worker.js": "/profile-manager/service-worker.js"
 }
