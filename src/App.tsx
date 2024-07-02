@@ -1,4 +1,3 @@
-import './App.css';
 import CardList from './features/profile-showroom/CardList';
 import SearchBox from './components/SearchBox';
 import Scroll from './components/Scroll';
@@ -7,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { search } from './features/profile-showroom/searchFieldSlice';
 import { storeStaff } from './features/profile-showroom/staffSlice';
 import { RootState } from './store';
+import './App.css';
 
 const App = () => {
 	const { staffMembers, searchText } = useSelector((state: RootState) => {
@@ -23,8 +23,6 @@ const App = () => {
 				return response.json();
 			})
 			.then(users => dispatch(storeStaff(users)));
-
-		console.log('i fire once');
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 

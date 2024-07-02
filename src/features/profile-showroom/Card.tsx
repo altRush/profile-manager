@@ -1,4 +1,4 @@
-import { ICardProps } from '../../interfaces/Staff.interface';
+import { ICardProps } from '../../interfaces';
 
 const Card = ({ name, email, id }: ICardProps) => {
 	return (

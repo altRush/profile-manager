@@ -1,10 +1,6 @@
-import { SearchChangeCallback } from '../interfaces/SearchField.interface';
+import { ISearchBoxProps } from '../interfaces/Search.interface';
 
-interface IProps {
-	searchChange: SearchChangeCallback;
-}
-
-const SearchBox = ({ searchChange }: IProps) => {
+const SearchBox = ({ searchChange }: ISearchBoxProps) => {
 	return (
 		<div className="pa2">
 			<input
