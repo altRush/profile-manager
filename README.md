@@ -1,12 +1,13 @@
 # Profile Manager
 
-### (Employee Searching Demo V-1.0)
+## Version 0.2.0
 
-The project simulate a single-page app where the user can type a name and instantly find an employee profile's card without hitting submit button or switching to another page.
+An employees' profiles manager
 
-### Todo:
+### Features
 
-- also fetch the selected (clicked) profile's data as a `Modal`
+- Search for an employee
+- Click at a profile card to see extended info
 
 **Techs used:** :green_book::blue_book::orange_book:
 
