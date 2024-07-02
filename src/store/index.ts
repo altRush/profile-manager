@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import searchFieldReducer from '../features/profile-showroom/searchFieldSlice';
 import staffReducer from '../features/profile-showroom/staffSlice';
+import modalForStaffReducer from '../features/profile-showroom/modalSlice';
 
 export const store = configureStore({
 	reducer: {
 		searchField: searchFieldReducer,
-		staff: staffReducer
+		staff: staffReducer,
+		modalForStaff: modalForStaffReducer
 	}
 });
 

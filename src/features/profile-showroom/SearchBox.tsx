@@ -1,4 +1,4 @@
-import { ISearchBoxProps } from '../interfaces/Search.interface';
+import { ISearchBoxProps } from '../../interfaces/Search.interface';
 
 const SearchBox = ({ searchChange }: ISearchBoxProps) => {
 	return (

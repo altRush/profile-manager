@@ -1,5 +1,5 @@
 import CardList from './features/profile-showroom/CardList';
-import SearchBox from './components/SearchBox';
+import SearchBox from './features/profile-showroom/SearchBox';
 import Scroll from './components/Scroll';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,6 +7,7 @@ import { search } from './features/profile-showroom/searchFieldSlice';
 import { storeStaff } from './features/profile-showroom/staffSlice';
 import { RootState } from './store';
 import './App.css';
+import StaffModal from './features/profile-showroom/Modal';
 
 const App = () => {
 	const { staffMembers, searchText } = useSelector((state: RootState) => {
@@ -43,6 +44,7 @@ const App = () => {
 			<Scroll>
 				<CardList staffMembers={filteredStaffs} />
 			</Scroll>
+			<StaffModal />
 		</div>
 	);
 };
